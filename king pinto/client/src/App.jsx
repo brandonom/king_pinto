@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
+import { Routes, Route } from "react-router-dom";
 import Landing from './pages/Landing'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   // const [state, dispatch] = useStoreContext();
@@ -25,8 +28,9 @@ function App() {
     <>
       <Header />
       <main>
-        <Routes>
-          <Route path="/" element={<Landing />} />
+        <Landing />
+        {/* <Routes> */}
+          {/* <Route path="/" element={<Landing />} /> */}
           {/* <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
 
@@ -36,7 +40,7 @@ function App() {
           <Route path="/success" element={<OrderProcessed />} /> */}
 
           {/* <Route path="*" element={<NotFound />} /> */}
-        </Routes>
+        {/* </Routes> */}
       </main>
 
       <Footer />

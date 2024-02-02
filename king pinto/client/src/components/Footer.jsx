@@ -1,4 +1,8 @@
-import Logo from "../assets/logo.png";
+import "../styles/footer.scss";
+
+import Logo from "../assets/logo.jpeg";
+
+
 
 function Footer() {
   return (
@@ -16,7 +20,7 @@ function Footer() {
 
         {/* Centered Logo */}
         <div className="flex items-center justify-center md:mr-40">
-          <img src={Logo} alt="logo-ct" className="w-10" />
+          {/* <img src={Logo} alt="logo-ct" className="w-10" /> */}
         </div>
 
         {/* Copyright */}
