@@ -8,34 +8,23 @@ export default function Header() {
     >
       <h1 className="text-2xl font-bold">King Pinto</h1>
       <nav className="flex gap-4">
-        <a
-          style={{ padding: "10px" }}
-          className="text-gray-600 hover:underline dark:text-gray-300"
-          href="#"
-        >
-          Home
-        </a>
-        <a
-          style={{ padding: "10px" }}
-          className="text-gray-600 hover:underline dark:text-gray-300"
-          href="#"
-        >
-          About
-        </a>
-        <a
-          style={{ padding: "10px" }}
-          className="text-gray-600 hover:underline dark:text-gray-300"
-          href="#"
-        >
-          Gallery
-        </a>
-        <a
-          style={{ padding: "10px" }}
-          className="text-gray-600 hover:underline dark:text-gray-300"
-          href="#"
-        >
-          Murals
-        </a>
+        <ul className="flex list-none">
+          <li
+            style={{ padding: "10px" }}
+            className="text-gray-600 hover:underline dark:text-gray-300"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            style={{ padding: "10px" }}
+            className="text-gray-600 hover:underline dark:text-gray-300"
+          >
+            <a href="#mural">Mural</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+        </ul>
       </nav>
     </header>
   );
