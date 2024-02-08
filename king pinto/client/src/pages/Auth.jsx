@@ -61,8 +61,8 @@ function Auth({ isLogin }) {
           <img
             style={{ filter: "invert(1)" }}
             className="mx-auto h-10 w-auto invert-colors"
-            src={"/images/logo.png"}
-            alt="Your Company"
+            src={"../assets/Logo.jpeg"}
+            alt="King Pinto"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             {isLogin ? "Sign in to your account" : "Register"}
