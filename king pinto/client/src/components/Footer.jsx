@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/footer.scss";
 
 import Logo from "../assets/logo.jpeg";
@@ -5,7 +6,7 @@ import Logo from "../assets/logo.jpeg";
 function Footer() {
   return (
     <footer className="w-full bg-black p-2 mt-14">
-      <div className="text-white flex flex-col md:flex-row justify-center md:justify-between items-center mx-auto px-2">
+      <div className="text-black flex flex-col md:flex-row justify-center md:justify-between items-center mx-auto px-2">
         {/* Contact Information */}
         <div className="mb-4 md:mb-0 text-center md:text-left">
           <h3 className="underline">Contact:</h3>
