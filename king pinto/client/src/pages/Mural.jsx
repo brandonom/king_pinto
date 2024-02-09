@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/mural.scss"
 export default function Mural() {
   return (
     <section

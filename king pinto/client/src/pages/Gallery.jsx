@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/gallery.scss"
 export default function Gallery() {
   return (
     <section
@@ -12,44 +12,43 @@ export default function Gallery() {
         <img
           alt="Artwork 1"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="200"
-          src="../src/assets/react.svg"
-          width="200"
+          
+          src="\assets\Logo.jpeg"
+          
         />
         <img
           alt="Artwork 2"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="300"
           src="/placeholder.svg"
-          width="200"
+          
         />
         <img
           alt="Artwork 3"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="250"
+          
           src="/placeholder.svg"
-          width="200"
+          
         />
         <img
           alt="Artwork 4"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="200"
+          
           src="/placeholder.svg"
-          width="200"
+          
         />
         <img
           alt="Artwork 5"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="300"
+          
           src="/placeholder.svg"
-          width="200"
+          
         />
         <img
           alt="Artwork 6"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          height="250"
+          
           src="/placeholder.svg"
-          width="200"
+          
         />
       </main>
     </section>
