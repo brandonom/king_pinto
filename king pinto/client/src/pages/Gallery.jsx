@@ -13,7 +13,7 @@ export default function Gallery() {
           alt="Artwork 1"
           className="aspect-content object-cover rounded-lg overflow-hidden"
           height="200"
-          src="/placeholder.svg"
+          src="../src/assets/react.svg"
           width="200"
         />
         <img

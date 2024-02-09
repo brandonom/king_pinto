@@ -38,10 +38,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <header
-            style={{ backgroundColor: "bg-gray-600", padding: "10px" }}
-            className="flex items-center justify-between p-6 bg-white dark:bg-gray-800"
-          >
+          <header className="flex items-center justify-between p-6 bg-white dark:bg-gray-800">
             <h1 className="text-2xl font-bold">King Pinto</h1>
             <nav className="flex gap-4">
               <ul className="flex list-none">
