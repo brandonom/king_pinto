@@ -2,18 +2,20 @@
     background-color: #28282B ;
     color: whitesmoke;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: auto;
     
     h1 {
-        padding-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 100px;
         font-weight: bolder;
-        
-        
+         
     }
 
     img {
         height: 300px;
         width: 300px;
-        padding-bottom: 100px;
+        padding-bottom: 150px;
     }
 }
 
