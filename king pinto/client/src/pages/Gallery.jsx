@@ -4,7 +4,7 @@ export default function Gallery() {
   return (
     <section
       id="gallery"
-      // style={{ padding: "10px", width: "100%" ,}}
+      style={{ padding: "10px", width: "100%" , backgroundImage: "/assets/stock1.jpg", backgroundRepeat: "no-repeat"}}
       className="flex flex-col min-h-screen"
     >
       <main className="flex-1 p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
