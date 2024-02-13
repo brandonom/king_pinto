@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/gallery.scss"
+import "../styles/gallery.scss";
 export default function Gallery() {
   return (
     <section
@@ -12,7 +12,6 @@ export default function Gallery() {
         {/* <img
           alt="Artwork 1"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          
           src="/assets/Logo.jpeg"
           
         />
@@ -20,36 +19,28 @@ export default function Gallery() {
           alt="Artwork 2"
           className="aspect-content object-cover rounded-lg overflow-hidden"
           src="/placeholder.svg"
-          
         />
         <img
           alt="Artwork 3"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          
           src="/placeholder.svg"
-          
         />
         <img
           alt="Artwork 4"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          
           src="/placeholder.svg"
-          
         />
         <img
           alt="Artwork 5"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          
           src="/placeholder.svg"
-          
         />
         <img
           alt="Artwork 6"
           className="aspect-content object-cover rounded-lg overflow-hidden"
-          
           src="/placeholder.svg"
-          
-        /> */}
+
+        />
       </main>
     </section>
   );

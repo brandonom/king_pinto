@@ -7,7 +7,7 @@ const path = require("path");
 require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3334;
 const is_prod = process.env.NODE_ENV === "production";
 
 const db = require("./config/connection");
@@ -27,8 +27,10 @@ async function startServer() {
   app.use(express.json());
 
   // Serve up static assets
-  app.use('/images', express.static(path.join(__dirname, '../client/public/images')));
-
+  app.use(
+    "/images",
+    express.static(path.join(__dirname, "../client/public/images"))
+  );
 
   // Open cookie middleware channel so we can view cookies on the request object
   app.use(cookieParser());

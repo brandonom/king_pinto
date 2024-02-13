@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd ./server && npm start",
-    "client": "npm start",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev:client": "cd ./client && npm run dev",
+    "seed:dev": "cd ./server && npm run seed:dev",
+    "seed:prod": "cd ./server && npm run seed:prod",
+    "dev:server": "cd ./server && npm run start:dev",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "build": "cd ./client && NODE_ENV=development npm install --only=dev && npm run build",
+    "start": "npm run dev"
   },
   "dependencies": {
     "@apollo/client": "^3.9.4",
@@ -24,6 +24,7 @@
     "graphql": "^16.8.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.3",
+    "nodemon": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
