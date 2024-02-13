@@ -1,5 +1,5 @@
 header {
-  background-color: whitesmoke;
+  
 
   nav {
     font: 100%;
@@ -19,5 +19,11 @@ header {
       border: white;
       text-decoration: none;
     }
+  }
+
+  div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
   }
 }
