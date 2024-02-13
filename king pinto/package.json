@@ -13,7 +13,7 @@
     "install:client": "cd ./client && npm i",
     "install:server": "cd ./server && npm i",
     "install": "npm run install:client && npm run install:server",
-    "start": "cd ./server && npm start"
+    "start": "npm run dev"
   },
   "dependencies": {
     "@apollo/client": "^3.9.4",

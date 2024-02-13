@@ -1,8 +1,7 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 
-const { ApolloServer } = require("@apollo/server-express"); // Note the import change
-const { expressMiddleware } = require("@apollo/server-express");
+const { ApolloServer } = require("@apollo/server-express");
 const path = require("path");
 require("dotenv").config();
 
@@ -10,7 +9,7 @@ const app = express();
 
 // Define ports for Express and Apollo GraphQL servers
 const EXPRESS_PORT = process.env.EXPRESS_PORT || 3334;
-const GRAPHQL_PORT = process.env.GRAPHQL_PORT || 3344; // Choose a different port
+const GRAPHQL_PORT = process.env.GRAPHQL_PORT || 3444; // Choose a different port
 
 const is_prod = process.env.NODE_ENV === "production";
 
@@ -22,7 +21,7 @@ const { authenticate } = require("./auth");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: authenticate,
+  context: authenticate, // Include context here
 });
 
 // Apply the Apollo Server middleware to Express
