@@ -41,23 +41,7 @@ export default function Header() {
           <header className="flex items-center justify-between p-6 bg-white dark:bg-gray-800">
             <h1 className="text-2xl font-bold">King Pinto</h1>
             <nav className="flex gap-4">
-              <ul className="flex list-none">
-                <li
-                  style={{ padding: "10px" }}
-                  className="text-gray-600 hover:underline dark:text-gray-300"
-                >
-                  <a href="/">Home</a>
-                </li>
-                <li
-                  style={{ padding: "10px" }}
-                  className="text-gray-600 hover:underline dark:text-gray-300"
-                >
-                  <a href="#mural">Mural</a>
-                </li>
-                <li>
-                  <a href="#gallery">Gallery</a>
-                </li>
-              </ul>
+             
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {state.user ? (
                   <>
