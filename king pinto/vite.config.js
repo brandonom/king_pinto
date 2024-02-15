@@ -22,7 +22,7 @@ export default defineConfig({
   build: {
     // Explicitly set the entry point
     rollupOptions: {
-      input: "/src/main.jsx", // Adjust the path as needed
+      input: "king pinto/client/src/main.jsx", // Adjust the path as needed
     },
   },
 });
